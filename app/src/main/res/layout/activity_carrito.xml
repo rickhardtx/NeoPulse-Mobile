@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="24dp"
+    tools:context=".CarritoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CARRITO DE COMPRAS"
+        android:textColor="#00FF66"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Scroll para mostrar los productos con sus fotos dinámicamente -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E1E1E"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/contenedorProductosCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Total a Pagar -->
+    <TextView
+        android:id="@+id/txtTotalCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total a pagar: $ 0"
+        android:textColor="#00FF66"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Compra"
+        android:backgroundTint="#00FF66"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

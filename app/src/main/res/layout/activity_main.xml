@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la App -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEOPULSE STORE"
+            android:textColor="#00FF66"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- PRODUCTO 1: Teclado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/teclado"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TECLADO MECÁNICO K-MK200"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Switches mecánicos | Anti-ghosting | RGB"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 100.000"
+                android:textColor="#00FF66"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnTeclado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir al carrito"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- PRODUCTO 2: Mouse -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mouse"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOUSE ALÁMBRICO M-ECG500"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensor óptico alta precisión | DPI ajustable"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 72.000"
+                android:textColor="#00FF66"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnMouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir al carrito"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+
+        <!-- PRODUCTO 3: Audífonos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/audifonos"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AUDÍFONOS ALÁMBRICOS G-HP100"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sonido inmersivo | Micrófono ajustable"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 65.000"
+                android:textColor="#00FF66"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnAudifonos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Añadir al carrito"
+                android:backgroundTint="#00FF66"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+        </LinearLayout> <!-- Fin de la tarjeta de Audífonos -->
+
+        <!-- Botón general para ir al Carrito -->
+        <Button
+            android:id="@+id/btnVerCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Carrito de Compras"
+            android:backgroundTint="#00FF66"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout> <!-- Fin del LinearLayout principal -->
+</ScrollView>
